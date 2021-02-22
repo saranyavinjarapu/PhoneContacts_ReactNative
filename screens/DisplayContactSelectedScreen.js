@@ -1,8 +1,16 @@
 import React from "react";
 import { StyleSheet, View, Button } from "react-native";
+import SelectedContactItem from "../components/SelectedContactItem";
 
 const DisplayContactSelectedScreen = (props) => {
-  return <View style={styles.screen}></View>;
+  return (
+    <View style={styles.screen}>
+      <SelectedContactItem
+        visible={props.is_contact_selected}
+        phoneContactSelected={props.selected_contact_data}
+      ></SelectedContactItem>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
@@ -11,11 +19,6 @@ const styles = StyleSheet.create({
     alignContent: "center",
     justifyContent: "center",
     alignItems: "center",
-  },
-  button: {
-    width: 250,
-    padding: 10,
-    marginTop: 350,
   },
 });
 
