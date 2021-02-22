@@ -3,6 +3,7 @@ import { StyleSheet, View } from "react-native";
 import Header from "./components/Header";
 import OpenContactsMainScreen from "./screens/OpenContactsMainScreen";
 import DisplayContactListScreen from "./screens/DisplayContactListScreen";
+import DisplayContactSelectedScreen from "./screens/DisplayContactSelectedScreen";
 
 export default function App() {
   const [contactsData, setContactsData] = useState();
@@ -15,6 +16,7 @@ export default function App() {
 
   const showContactsHandler = (contacts_data) => {
     setContactsData(contacts_data);
+    setSelectedContactData();
   };
   const showSelectedContactHandler = (selected_contact_data) => {
     setSelectedContactData(selected_contact_data);
