@@ -9,6 +9,12 @@ const DisplayContactSelectedScreen = (props) => {
         visible={props.is_contact_selected}
         phoneContactSelected={props.selected_contact_data}
       ></SelectedContactItem>
+      <View style={styles.button}>
+        <Button
+          title="BACK TO HOME PAGE"
+          onPress={props.returnHomePage}
+        ></Button>
+      </View>
     </View>
   );
 };
@@ -19,6 +25,11 @@ const styles = StyleSheet.create({
     alignContent: "center",
     justifyContent: "center",
     alignItems: "center",
+  },
+  button: {
+    width: 250,
+    padding: 10,
+    marginTop: 350,
   },
 });
 
