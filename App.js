@@ -4,10 +4,15 @@ import Header from "./components/Header";
 import OpenContactsMainScreen from "./screens/OpenContactsMainScreen";
 
 export default function App() {
+  const showContactsHandler = (contacts_data) => {
+    console.log("set show contacts screen");
+  };
   return (
     <View style={styles.screen}>
       <Header title="PHONE CONTACTS"></Header>
-      <OpenContactsMainScreen></OpenContactsMainScreen>
+      <OpenContactsMainScreen
+        showContacts={showContactsHandler}
+      ></OpenContactsMainScreen>
     </View>
   );
 }
