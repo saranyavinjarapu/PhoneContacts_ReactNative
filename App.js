@@ -4,8 +4,9 @@ import Header from "./components/Header";
 import OpenContactsMainScreen from "./screens/OpenContactsMainScreen";
 
 export default function App() {
+  const [contactsData, setContactsData] = useState();
   const showContactsHandler = (contacts_data) => {
-    console.log("set show contacts screen");
+    setContactsData(contacts_data);
   };
   return (
     <View style={styles.screen}>
@@ -13,6 +14,9 @@ export default function App() {
       <OpenContactsMainScreen
         showContacts={showContactsHandler}
       ></OpenContactsMainScreen>
+      <DisplayContactListScreen
+        contacts_data={contactsData}
+      ></DisplayContactListScreen>
     </View>
   );
 }
