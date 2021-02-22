@@ -3,6 +3,12 @@ import { StyleSheet, View, FlatList } from "react-native";
 import ContactItem from "../components/ContactItem";
 
 const DisplayContactListScreen = (props) => {
+  const selectContactHandler = (contactId) => {
+    const selectedContact = props.contacts_data.filter(
+      (data) => data.id == contactId
+    );
+    props.showSelectedContact(selectedContact);
+  };
   return (
     <View style={styles.screen}>
       <FlatList
@@ -11,7 +17,7 @@ const DisplayContactListScreen = (props) => {
         renderItem={(itemData) => (
           <ContactItem
             contactItem={itemData.item}
-            onSelect={() => console.log("on contact select")}
+            onSelect={selectContactHandler}
           ></ContactItem>
         )}
       ></FlatList>
