@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.screen}>
-      <Text>Phone Contacts</Text>
+      <Header title="PHONE CONTACTS"></Header>
     </View>
   );
 }
