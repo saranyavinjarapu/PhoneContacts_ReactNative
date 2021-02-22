@@ -7,6 +7,12 @@ import DisplayContactListScreen from "./screens/DisplayContactListScreen";
 export default function App() {
   const [contactsData, setContactsData] = useState();
   const [selectedContactData, setSelectedContactData] = useState();
+
+  const returnHomePagHandler = () => {
+    setSelectedContactData(null);
+    setContactsData(null);
+  };
+
   const showContactsHandler = (contacts_data) => {
     setContactsData(contacts_data);
   };
@@ -31,6 +37,7 @@ export default function App() {
       <DisplayContactSelectedScreen
         selected_contact_data={selectedContactData}
         is_contact_selected={true}
+        returnHomePage={returnHomePagHandler}
       ></DisplayContactSelectedScreen>
     );
   }
