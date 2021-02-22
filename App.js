@@ -6,11 +6,12 @@ import DisplayContactListScreen from "./screens/DisplayContactListScreen";
 
 export default function App() {
   const [contactsData, setContactsData] = useState();
+  const [selectedContactData, setSelectedContactData] = useState();
   const showContactsHandler = (contacts_data) => {
     setContactsData(contacts_data);
   };
   const showSelectedContactHandler = (selected_contact_data) => {
-    console.log("contact selected");
+    setSelectedContactData(selected_contact_data);
   };
 
   let content = (
@@ -18,12 +19,19 @@ export default function App() {
       showContacts={showContactsHandler}
     ></OpenContactsMainScreen>
   );
-  if (contactsData) {
+  if (contactsData && !selectedContactData) {
     content = (
       <DisplayContactListScreen
         contacts_data={contactsData}
         showSelectedContact={showSelectedContactHandler}
       ></DisplayContactListScreen>
+    );
+  } else if (selectedContactData) {
+    content = (
+      <DisplayContactSelectedScreen
+        selected_contact_data={selectedContactData}
+        is_contact_selected={true}
+      ></DisplayContactSelectedScreen>
     );
   }
   return (
