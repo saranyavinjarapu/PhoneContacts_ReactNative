@@ -7,6 +7,7 @@ const DisplayContactListScreen = (props) => {
     const selectedContact = props.contacts_data.filter(
       (data) => data.id == contactId
     );
+
     props.showSelectedContact(selectedContact);
   };
   return (
