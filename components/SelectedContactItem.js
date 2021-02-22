@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
   contactSelected: {
     padding: 90,
-    paddingLeft: 200,
+    paddingLeft: 130,
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
