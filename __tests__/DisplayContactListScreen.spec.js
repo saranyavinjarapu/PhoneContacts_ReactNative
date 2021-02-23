@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
-import DisplayContactListScreen from "../screens/DisplayContactListScreen";
+import DisplayContactListScreen from "../screens/DisplayContactListScreen/DisplayContactListScreen";
 
 describe("Display Contacts List Screen Renders Correctly", () => {
   it("renders correctly", () => {

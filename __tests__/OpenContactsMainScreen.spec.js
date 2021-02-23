@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
-import OpenContactsMainScreen from "../screens/OpenContactsMainScreen";
+import OpenContactsMainScreen from "../screens/OpenContactsMainScreen/OpenContactsMainScreen";
 
 describe("Open Contacts Main Screen Renders Correctly", () => {
   it("renders correctly", () => {

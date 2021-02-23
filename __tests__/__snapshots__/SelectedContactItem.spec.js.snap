@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Selected Contact Item Renders Correctly renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "borderRadius": 10,
+        "elevation": 15,
+        "justifyContent": "center",
+        "marginVertical": 100,
+        "maxWidth": "80%",
+        "padding": 90,
+        "paddingLeft": 130,
+        "shadowColor": "black",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.26,
+        "shadowRadius": 6,
+        "textAlign": "center",
+        "width": "80%",
+      }
+    }
+  />
+</View>
+`;

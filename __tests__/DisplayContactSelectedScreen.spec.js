@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
-import DisplayContactSelectedScreen from "../screens/DisplayContactSelectedScreen";
+import DisplayContactSelectedScreen from "../screens/DisplayContactSelectedScreen/DisplayContactSelectedScreen";
 
 describe("Display Contact Selected Screen Renders Correctly", () => {
   it("renders correctly", () => {

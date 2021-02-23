@@ -1,6 +1,7 @@
 import React from "react";
-import { StyleSheet, View, Button } from "react-native";
-import SelectedContactItem from "../components/SelectedContactItem";
+import { View, Button } from "react-native";
+import styles from "./DisplayContactSelectedScreenStyles";
+import SelectedContactItem from "../../components/SelectedContactItem/SelectedContactItem";
 
 const DisplayContactSelectedScreen = (props) => {
   return (
@@ -18,19 +19,5 @@ const DisplayContactSelectedScreen = (props) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  screen: {
-    padding: 10,
-    alignContent: "center",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  button: {
-    width: 250,
-    padding: 10,
-    marginTop: 350,
-  },
-});
 
 export default DisplayContactSelectedScreen;

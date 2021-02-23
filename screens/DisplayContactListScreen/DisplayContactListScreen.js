@@ -1,6 +1,7 @@
 import React from "react";
-import { StyleSheet, View, FlatList } from "react-native";
-import ContactItem from "../components/ContactItem";
+import { View, FlatList } from "react-native";
+import styles from "./DisplayContactListScreenStyles";
+import ContactItem from "../../components/ContactItem/ContactItem";
 
 const DisplayContactListScreen = (props) => {
   const selectContactHandler = (contactId) => {
@@ -12,6 +13,7 @@ const DisplayContactListScreen = (props) => {
   return (
     <View style={styles.screen}>
       <FlatList
+        testID="flat_list"
         keyExtractor={(item, index) => index.toString()}
         data={props.contacts_data}
         renderItem={(itemData) => (
@@ -24,12 +26,5 @@ const DisplayContactListScreen = (props) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    padding: 10,
-  },
-});
 
 export default DisplayContactListScreen;

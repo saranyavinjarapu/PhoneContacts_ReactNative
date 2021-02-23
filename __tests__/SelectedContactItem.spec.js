@@ -1,6 +1,6 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react-native";
-import SelectedContactItem from "../components/SelectedContactItem";
+import SelectedContactItem from "../components/SelectedContactItem/SelectedContactItem";
 
 describe("Selected Contact Item Renders Correctly", () => {
   it("renders correctly", () => {
