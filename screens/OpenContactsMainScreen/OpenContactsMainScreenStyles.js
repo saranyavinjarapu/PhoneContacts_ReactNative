@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 50,
+    paddingTop: 1,
   },
   buttonContainer: {
     flexDirection: "row",

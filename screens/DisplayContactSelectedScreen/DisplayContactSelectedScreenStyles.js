@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   button: {
     width: 250,
     padding: 10,
-    marginTop: 350,
+    marginTop: 270,
   },
 });
 
