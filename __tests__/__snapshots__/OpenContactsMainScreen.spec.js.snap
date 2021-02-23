@@ -6,6 +6,7 @@ exports[`Open Contacts Main Screen Renders Correctly renders correctly 1`] = `
     Object {
       "flex": 1,
       "padding": 50,
+      "paddingTop": 1,
     }
   }
 >
